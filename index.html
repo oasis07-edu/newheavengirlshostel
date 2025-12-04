@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LOGO IN HEAD/TITLE/TAB -->
+    <meta name="description"
+        content="New Heaven Girls Hostel in Mid Baneshwor, Kathmandu offers safe, comfortable accommodation for female students. 24/7 security, home-cooked meals, sisterhood community. Contact: 9847298635">
+    <meta name="keywords"
+        content="girls hostel Mid Baneshwor, girls PG Kathmandu, New Heaven hostel, female accommodation Baneshwor, student girls hostel Kathmandu, safe girls hostel Nepal">
+    <meta name="geo.region" content="NP-1">
+    <meta name="geo.placename" content="Mid Baneshwor, Kathmandu">
+    <meta name="geo.position" content="27.7006;85.3300">
+    <meta name="ICBM" content="27.7006, 85.3300">
+
+    <!-- Open Graph Social SEO -->
+    <meta property="og:title" content="New Heaven Girls Hostel - Mid Baneshwor, Kathmandu">
+    <meta property="og:description"
+        content="Safe girls hostel in Mid Baneshwor with 24/7 security, home-cooked meals & sisterhood community. Perfect for female students.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    
+    <title>New Heaven Girls Hostel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Momo+Trust+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* MINIMALIST NAVBAR */
+        .navbar {
+            font-family: "Momo Trust Display", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0 24px;
+            height: 80px;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px 0;
+            position: relative;
+        }
+
+        .logo-img {
+            width: 65px;
+            height: 65px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+            border: 2px solid rgba(59, 130, 246, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .logo-main {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            color: #3b82f6;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav.oasis {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 8px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        nav.oasis a {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 12px 16px;
+            color: #64748b;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            text-decoration: none;
+        }
+
+        nav.oasis a:hover,
+        nav.oasis a.active {
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+            transform: translateY(-1px);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            padding: 8px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger:hover {
+            background: rgba(59, 130, 246, 0.1);
+            transform: scale(1.02);
+        }
+
+        .hamburger div {
+            width: 24px;
+            height: 2.5px;
+            background: #3b82f6;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active div:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .hamburger.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active div:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Hero Section */
+        .home {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .img {
+            background-image: url(outdoor.jpg);
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            z-index: -2;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .hero {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            font-weight: 800;
+            font-family: "Poppins", sans-serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(16, 185, 129, 0.15));
+            padding: 20px 40px;
+            /* border-radius: 20px; */
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .o {
+            color: #3b82f6;
+        }
+
+        .a {
+            color: #1d4ed8;
+        }
+
+        .s {
+            color: #10b981;
+        }
+
+        .i {
+            color: #059669;
+        }
+
+        /* MINIMALIST ABOUT SECTION */
+        .about {
+            min-height: 100vh;
+            padding: 120px 20px;
+            background: #f8fafc;
+            position: relative;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .about_head {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .about_head h1 {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .about_head h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            border-radius: 2px;
+        }
+
+        .about_head_para p {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            border-radius: 16px 16px 0 0;
+        }
+
+        .feature-image {
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover .feature-image img {
+            transform: scale(1.05);
+        }
+
+        .feature-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .feature-title {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .feature-text {
+            color: #64748b;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        .stats-section {
+            margin-top: 100px;
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #3b82f6;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* GALLERY SECTION */
+        .gal {
+            background: #f8fafc;
+            padding: 120px 20px;
+        }
+
+        .gal h1 {
+            text-align: center;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 80px;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .gal h1::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            border-radius: 2px;
+        }
+
+        .photo_container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        .photo {
+            height: 320px;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .photo:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+        }
+
+        .photo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .photo:hover::before {
+            opacity: 1;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo:hover img {
+            transform: scale(1.05);
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            min-height: 100vh;
+            padding: 120px 20px;
+            background: #f8fafc;
+        }
+
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .testimonials-head {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .testimonials-head h1 {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .testimonials-head h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            border-radius: 2px;
+        }
+
+        .testimonials-head p {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 40px 30px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 5rem;
+            font-family: 'Georgia', serif;
+            color: rgba(59, 130, 246, 0.1);
+            line-height: 1;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            color: #64748b;
+            font-style: italic;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .author-info h4 {
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .author-role {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .review_here {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #review {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(59, 130, 246, 0.1);
+            /* border: 1px solid black; */
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.15);
+        }
+
+        #review {
+            text-decoration: none;
+            color: #3b82f6;
+        }
+
+        #review:hover {
+            color: #3b82f6;
+            /* background: rgba(59, 130, 246, 0.1); */
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+            transform: translateY(-6px);
+        }
+
+        /* MINIMALIST FOOTER */
+        .footer {
+            background: #f8fafc;
+            padding: 80px 20px 40px;
+            border-top: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer-logo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+            border: 2px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .footer-brand {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: 2rem;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-section h3 {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            text-decoration: none;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateX(4px);
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+        }
+
+        .contact-icon1,
+        .contact-icon2,
+        .contact-icon3 {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info h4 {
+            color: #1e293b;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(226, 232, 240, 0.8);
+            text-align: center;
+            color: #64748b;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        /* LOCATION SECTION */
+        .location {
+            min-height: 80vh;
+            padding: 120px 20px;
+            background: #f8fafc;
+        }
+
+        .location::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+
+        .location-head {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .location-head h1 {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        /* .location-head h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            border-radius: 2px;
+        } */
+
+        .location-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .map-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            border: 0;
+            border-radius: 16px;
+        }
+
+        .location-info {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .location-info h3 {
+            font-family: "Momo Trust Display", sans-serif;
+            font-size: 1.8rem;
+            color: #1e293b;
+            margin-bottom: 25px;
+        }
+
+        /* .location-info h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+            border-radius: 1px;
+        } */
+
+        .location-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-info li {
+            padding: 12px 0;
+            color: #64748b;
+            font-size: 1.1rem;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .location-info li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 980px) {
+            .location-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .map-wrapper {
+                padding-bottom: 75%;
+            }
+
+            .navbar {
+                height: 70px;
+                padding: 0 16px;
+            }
+
+            .logo-img {
+                width: 55px;
+                height: 55px;
+            }
+
+            .logo-main {
+                font-size: 20px;
+            }
+
+            nav.oasis {
+                display: none;
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(30px);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 20px 20px;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: all 0.3s ease;
+                padding: 20px;
+                gap: 10px;
+            }
+
+            nav.oasis.active {
+                display: flex;
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero {
+                font-size: 50px;
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 25px;
+                border-radius: 12px;
+            }
+
+            .features-grid,
+            .testimonials-grid,
+            .photo_container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .stats-section {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .footer-logo img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .cmc {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="http://127.0.0.1:3000/aioa.html" class="logo-container">
+            <img src="logo.jpg" alt="New Heaven Logo" class="logo-img">
+            <div class="logo-text">
+                <div class="logo-main">New Heaven</div>
+                <div class="logo-subtitle">Girls Hostel</div>
+            </div>
+        </a>
+        <nav class="oasis" id="nav-links">
+            <a href="#homei" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Gallary">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#location">Location</a>
+            <a href="#footer">Contact us</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <section class="home" id="homei">
+        <div class="img"></div>
+        <div class="hero">
+            <span class="o">New</span>
+            <span class="a">Heaven</span>
+            <span class="s">Girls</span>
+            <span class="i">Hostel</span>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about_head">
+            <h1>About Us</h1>
+            <span class="about_head_para">
+                <p>Your Priority Is Our Priority</p>
+            </span>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="mum1.jpg" alt="Founder">
+                    <div class="feature-icon">👩‍💼</div>
+                </div>
+                <h2 class="feature-title">Our Founder</h2>
+                <p class="feature-text">With years of experience creating safe, welcoming spaces for young women, our
+                    founder built New Heaven with love and dedication to excellence.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="unity.jpg" alt="Community">
+                    <div class="feature-icon">🤝</div>
+                </div>
+                <h2 class="feature-title">Sisterhood Unity</h2>
+                <p class="feature-text">We foster a strong sense of community where every resident feels like family.
+                    Shared experiences create lifelong friendships and support.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-image">
+                    <img src="dine.jpg" alt="Dining">
+                    <div class="feature-icon">🍽️</div>
+                </div>
+                <h2 class="feature-title">Nourishing Dining</h2>
+                <p class="feature-text">Healthy, delicious home-cooked meals prepared with fresh ingredients. Our dining
+                    hall is where memories and friendships are nourished daily.</p>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number">30</span>
+                <div class="stat-label">Happy Residents</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5★</span>
+                <div class="stat-label">Rating</div>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <div class="stat-label">Security</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="Gallary" class="gal">
+        <h1>Gallery</h1>
+        <div class="photo_container">
+            <div class="photo">
+                <img src="room6.jpg" alt="Room 1">
+            </div>
+            <div class="photo">
+                <img src="room1.jpg" alt="Room 2">
+            </div>
+            <div class="photo">
+                <img src="55cc1bf9-e0c6-48c1-8c1d-84ce7122c19b.jpeg" alt="Room 3">
+            </div>
+            <div class="photo">
+                <img src="room3.jpg" alt="Room 4">
+            </div>
+            <div class="photo">
+                <img src="85fdc8e9-d268-4a7c-8d2d-90ef2478a4dd.jpeg" alt="Room 4">
+            </div>
+            <div class="photo">
+                <img src="3dabdc05-c4a7-4074-8031-5c811be6741f.jpeg" alt="Room 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-head">
+            <h1>What Our Residents Say</h1>
+            <span class="about_head_para">
+                <p>Join hundreds of happy girls who've made New Heaven their home away from home</p>
+            </span>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"New Heaven feels like family! The staff are so caring and the food is
+                    amazing. I've made lifelong friends here and feel completely safe 24/7."</p>
+                <div class="testimonial-author">
+                    <img src="bharosha.jpg" alt="Priya" class="author-avatar">
+                    <div class="author-info">
+                        <h4>Bharosha Shrestha</h4>
+                        <div class="author-role">CA Aspirant</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Best decision ever! Clean rooms, delicious meals, and such a supportive
+                    sisterhood. The location is perfect for college and the warden is like a second mom."</p>
+                <div class="testimonial-author">
+                    <img src="salina.jpg" alt="Anjali" class="author-avatar">
+                    <div class="author-info">
+                        <h4>Salina Khatun</h4>
+                        <div class="author-role">Student</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Next level hostel in Kathmandu for girls with affordable price . It is the
+                    best choose for girls. My stay there was amazing . This is second home of girls, away from mom .
+                    Thank u new heaven girls hostel ."</p>
+                <div class="testimonial-author">
+                    <img src="piok.png" alt="Sneha" class="author-avatar">
+                    <div class="author-info">
+                        <h4>Prikirti Poudel</h4>
+                        <div class="author-role">Law Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review_here">
+            <a href="https://search.google.com/local/writereview?placeid=ChIJeeXvNAAZ6zkR40lSY26r4Ho" id="review">Leave A Review</a>
+        </div>
+    </section>
+
+
+    <section class="location" id="location">
+        <div class="location-head">
+            <h1>Our Prime Location</h1>
+            <span class="about_head_para">
+                <p>Mid Baneshwor, Kathmandu - Perfect for students & professionals</p>
+            </span>
+        </div>
+
+        <div class="location-container">
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.60308937758!2d85.33109588885497!3d27.69865980000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190034efe579%3A0x7ae0ab6e635249e3!2sNew%20heaven%20girls%20hostel!5e0!3m2!1sen!2snp!4v1764414304272!5m2!1sen!2snp"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="location-info">
+                <h3>🗺️ Easy Access</h3>
+                <ul>
+                    <li>Near top colleges & universities</li>
+                    <li>5 min walk to public transport</li>
+                    <li>Shopping & hospitals nearby</li>
+                    <li>Safe, vibrant neighborhood</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="New Heaven Logo">
+                <div class="footer-brand">New Heaven</div>
+                <p style="color: #64748b; font-size: 1rem; max-width: 300px;">Your home away from home</p>
+            </div>
+            <div class="contact-section" id="contact">
+                <h3>📞 Contact Us</h3>
+                <div class="contact-grid">
+                    <a class="cmc" href="https://www.instagram.com/nhgh.kathmandu/">
+                        <div class="contact-item">
+                            <div class="contact-icon1" style="background-image: url(122.jpg);"></div>
+                            <div class="contact-info">
+                                <h4>Contact us</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61570089942064" class="cmc">
+                        <div class="contact-item">
+                            <div class="contact-icon2" style="background-image: url(fbq.jpeg);"></div>
+                            <div class="contact-info">
+                                <h4>Contact us</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLddCsXSjDHmDvGrLmmqPhxnhWfhgfNDSCMctTbKctthwtdVlPRcXRHNSxfFPXRbzsJnPC"
+                        class="cmc">
+                        <div class="contact-item">
+                            <div class="contact-icon3" style="background-image: url(gmail.jpeg);"></div>
+                            <div class="contact-info">
+                                <h4>Contact us</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 New Heaven Girls Hostel. All rights reserved. | Made with ❤️
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const navItems = document.querySelectorAll('nav.oasis a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navItems.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                navItems.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll observer
+        const sections = document.querySelectorAll('section[id], footer[id]');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navItems.forEach(link => link.classList.remove('active'));
+                    const activeLink = document.querySelector(`nav.oasis a[href="#${entry.target.id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+
+</html>
